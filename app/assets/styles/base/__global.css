@@ -1,7 +1,21 @@
-* {
-  box-sizing: border-box;
+*,
+*::after,
+::before {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
 }
 
 body {
-  background-color: aquamarine;
+	/*
+  font-family: ;
+  font-weight: ;
+  line-height: ;
+  color: ;
+  */
+	box-sizing: border-box;
 }
