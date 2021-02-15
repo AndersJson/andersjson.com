@@ -1,0 +1,55 @@
+.icon{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: .7rem;
+  cursor: pointer;
+  transition: all 400ms;
+
+  &:hover{
+    height: 13rem;
+    width: 13rem;
+  }
+
+  &:hover .icon__svg{
+    animation: pulse 3s infinite;
+  }
+
+  &:not(:first-child){
+    margin-left: 4rem;
+  }
+
+  &--red{
+    border-color: $color-primary;
+    color: $color-primary;
+  }
+
+  &--green{
+    border-color: $color-green;
+    color: $color-green;
+  }
+
+  &--blue{
+    border-color: $color-blue;
+    color: $color-blue;
+  }
+
+  &__svg{
+    fill: currentColor;
+    width: 4rem;
+  }
+}
+
+@keyframes pulse{
+  50% {
+    transform: scale(1.2);
+  },
+  100%{
+    transform: scale(1);
+  }
+}
