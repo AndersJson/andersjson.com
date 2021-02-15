@@ -1,0 +1,18 @@
+/*
+Breakpoints:
+- tab     >767px
+- desktop >1025px
+*/
+
+@define-mixin tab {
+  @media (min-width: 48em) {
+    @mixin-content;
+  }
+}
+
+@define-mixin desktop {
+  @media (min-width: 64em) {
+    @mixin-content;
+  }
+}
+

@@ -1,7 +1,10 @@
 @import './base/__vars.css';
+@import './base/__mixins.css';
 @import './base/__global.css';
 @import './base/__utilities.css';
 @import './base/__typography.css';
 @import './components/__wrapper.css';
+@import './components/__heading.css';
+
 
 
