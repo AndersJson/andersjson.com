@@ -2,4 +2,6 @@
 @import './base/__global.css';
 @import './base/__utilities.css';
 @import './base/__typography.css';
+@import './components/__wrapper.css';
+
 

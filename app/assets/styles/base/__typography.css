@@ -17,11 +17,7 @@ body{
   }
 }
 
-div,
-p,
-span,
-ul,
-li{
+*{
   &::selection{
     background-color: $color-primary;
     color: #fff;
