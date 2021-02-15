@@ -1,1 +1,5 @@
+@import './base/__vars.css';
 @import './base/__global.css';
+@import './base/__utilities.css';
+@import './base/__typography.css';
+

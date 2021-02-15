@@ -1,0 +1,32 @@
+.flex{
+  display: flex;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.no-display{
+  display: none;
+}
+
+.hr-short{
+  height: .5rem;
+  width: 6rem;
+  background-color: $color-primary;
+  border-radius: 1px;
+  margin: 3rem 0;
+}
