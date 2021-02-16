@@ -5,14 +5,13 @@ Breakpoints:
 */
 
 @define-mixin tab {
-  @media (min-width: 48em) {
-    @mixin-content;
-  }
+	@media (min-width: 47em) {
+		@mixin-content;
+	}
 }
 
 @define-mixin desktop {
-  @media (min-width: 64em) {
-    @mixin-content;
-  }
+	@media (min-width: 64em) {
+		@mixin-content;
+	}
 }
-
