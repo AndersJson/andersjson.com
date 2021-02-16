@@ -11,7 +11,7 @@ Breakpoints:
 }
 
 @define-mixin desktop {
-	@media (min-width: 64em) {
+	@media (min-width: 63em) {
 		@mixin-content;
 	}
 }
