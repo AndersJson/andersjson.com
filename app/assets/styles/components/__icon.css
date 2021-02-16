@@ -27,7 +27,7 @@
 	}
 
 	&:hover .icon__svg {
-		animation: pulse 3s infinite;
+		animation: pulse 3s 0.3s infinite;
 	}
 
 	&:not(:first-child) {

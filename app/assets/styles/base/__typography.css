@@ -1,39 +1,39 @@
-body{
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #fff;
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #fff;
 }
 
-.heading{
-  &--primary{
-    font-family: 'Kanit', sans-serif;
-    font-weight: 600;
-    font-size: 8rem;
-    letter-spacing: 1px;
-    line-height: 7rem;
-    color: $color-primary;
-    text-transform: uppercase;
-  }
+.heading {
+	&--primary {
+		font-family: "Kanit", sans-serif;
+		font-weight: 600;
+		font-size: 8rem;
+		letter-spacing: 1px;
+		line-height: 7rem;
+		color: $color-primary;
+		text-transform: uppercase;
+	}
 }
 
-*{
-  &::selection{
-    background-color: $color-primary;
-    color: #fff;
-  }
+* {
+	&::selection {
+		background-color: $color-primary;
+		color: #fff;
+	}
 }
 
 h1,
 h2,
 h3,
 h4,
-h5{
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+h5 {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
