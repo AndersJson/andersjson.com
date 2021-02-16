@@ -1,55 +1,71 @@
-.icon{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: .7rem;
-  cursor: pointer;
-  transition: all 400ms;
+.icon {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
 
-  &:hover{
-    height: 13rem;
-    width: 13rem;
-  }
+	&:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		border-style: solid;
+		border-width: 0.7rem;
+		cursor: pointer;
+		transition: all 400ms;
+	}
 
-  &:hover .icon__svg{
-    animation: pulse 3s infinite;
-  }
+	&:hover {
+		&:after {
+			height: 130%;
+			width: 130%;
+		}
+	}
 
-  &:not(:first-child){
-    margin-left: 4rem;
-  }
+	&:hover .icon__svg {
+		animation: pulse 3s infinite;
+	}
 
-  &--red{
-    border-color: $color-primary;
-    color: $color-primary;
-  }
+	&:not(:first-child) {
+		margin-left: 4rem;
+	}
 
-  &--green{
-    border-color: $color-green;
-    color: $color-green;
-  }
+	&--red {
+		color: $color-primary;
+		&:after {
+			border-color: $color-primary;
+		}
+	}
 
-  &--blue{
-    border-color: $color-blue;
-    color: $color-blue;
-  }
+	&--green {
+		color: $color-green;
+		&:after {
+			border-color: $color-green;
+		}
+	}
 
-  &__svg{
-    fill: currentColor;
-    width: 4rem;
-  }
+	&--blue {
+		color: $color-blue;
+		&:after {
+			border-color: $color-blue;
+		}
+	}
+
+	&__svg {
+		fill: currentColor;
+		width: 4rem;
+	}
 }
 
-@keyframes pulse{
-  50% {
-    transform: scale(1.2);
-  },
-  100%{
-    transform: scale(1);
-  }
+@keyframes pulse {
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
