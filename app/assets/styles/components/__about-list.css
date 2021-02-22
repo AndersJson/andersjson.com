@@ -1,0 +1,28 @@
+.about-list{
+  list-style-type: none;
+  font-size: 1.6rem;
+
+  & li{
+    display: flex;
+
+    &:not(:last-child){
+      margin-bottom: .5rem;
+    }
+  }
+
+  &__heading{
+    flex: 0 0 15%;
+
+    @mixin tab{
+      flex: 0 0 23%;
+    }
+  }
+
+  &__data{
+    flex: 0 0 85%;
+
+    @mixin tab{
+      flex: 0 0 77%;
+    }
+  }
+}

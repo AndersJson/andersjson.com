@@ -1,4 +1,11 @@
 .content{
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50%;
+
+  @mixin desktop {
+    width: 50%;
+    height: 100%;
+  }
 }

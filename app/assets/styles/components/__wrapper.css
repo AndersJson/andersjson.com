@@ -1,8 +1,9 @@
-.wrapper{
+.page-wrapper{
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  padding: 3%;
 
   @mixin desktop{
     flex-direction: row;

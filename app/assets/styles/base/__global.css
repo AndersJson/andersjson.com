@@ -7,7 +7,16 @@
 }
 
 html {
-	font-size: 62.5%;
+	font-size: 44%;
+
+	@mixin tab{
+		font-size: 50%;
+	}
+
+	@mixin desktop{
+		font-size: 62.5%;
+	}
+
 }
 
 body {
