@@ -1,4 +1,5 @@
 .about{
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,18 +7,21 @@
   height: 100vh;
   background-color: green;
 
-  @supports ( (-webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%) ) or ( clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%) ) ){
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-    padding-top: 20%;
+
+  @supports ( (-webkit-clip-path: polygon(0 12rem, 100% 0, 100% 100%, 0 100%) ) or ( clip-path: polygon(0 12rem, 100% 0, 100% 100%, 0 100%) ) ){
+    clip-path: polygon(0 12rem, 100% 0, 100% 100%, 0 100%);
+    padding-top: 12rem;
+    transform: translateY(-13rem);
   }
 
   @mixin tab{
     height: 100%;
 
-    @supports ( (-webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%) ) or ( clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%) ) ){
-    clip-path: none;
-    padding-top: 0;
-  }
+    @supports ( (-webkit-clip-path: polygon(0 12rem, 100% 0, 100% 100%, 0 100%) ) or ( clip-path: polygon(0 12rem, 100% 0, 100% 100%, 0 100%) ) ){
+      clip-path: none;
+      padding-top: 0;
+      transform: translateY(0);
+    }
   }
   
 
@@ -41,4 +45,3 @@
     align-items: center;
   }
 }
-
