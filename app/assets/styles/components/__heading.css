@@ -8,6 +8,8 @@
       linear-gradient(to right, rgba(0,0,0,.8) rgba(0,0,0,.8)),
       url(./assets/images/coding.jpg);
   background-size: cover;
+  background-attachment: fixed;
+  transform: translateY(12%);
 
   @mixin tab {
     width: 100%;
