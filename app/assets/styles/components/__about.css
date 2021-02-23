@@ -3,17 +3,23 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50%;
+  height: 100vh;
+  background-color: green;
+
+  @supports ( (-webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%) ) or ( clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%) ) ){
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    padding-top: 20%;
+  }
 
   @mixin tab{
-    width: 50%;
     height: 100%;
+
+    @supports ( (-webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%) ) or ( clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%) ) ){
+    clip-path: none;
+    padding-top: 0;
+  }
   }
   
-  @mixin desktop{
-    width: 100%;
-    height: 50%;
-  }
 
   &__wrapper{
     display: flex;

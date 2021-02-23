@@ -3,7 +3,7 @@ body {
 	font-size: 2rem;
 	font-weight: 400;
 	line-height: 1.6;
-	color: #fff;
+	color: #E4E4E4;
 }
 
 .heading {
@@ -25,11 +25,8 @@ body {
 	}
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1
+{
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;

@@ -15,6 +15,10 @@
 	transition: all 300ms;
 }
 
+.inner-wrapper{
+  padding: 4%;
+}
+
 .padding-left {
 	&--xl {
 		padding-left: 10rem;
@@ -31,18 +35,20 @@
 }
 
 .animation--slide-in-to-small {
-	animation: slide-in-to-small 4s ease;
+	animation: slide-in-to-small 5s ease;
 	animation-fill-mode: forwards;
 }
 
 .animation--fade-in-from-left {
-	animation: fade-in 2s ease;
+	animation: fade-in 2s ease .5s;
 	transform-origin: 0% 50%;
+	animation-fill-mode: forwards;
 }
 
 .animation--fade-in-from-right {
 	animation: fade-in 2s ease;
 	transform-origin: 100% 50%;
+	animation-fill-mode: forwards;
 }
 
 @keyframes slide-in-to-small {
@@ -55,6 +61,7 @@
 		width: 6rem;
 	}
 	100% {
+		opacity: 1;
 		width: 6rem;
 	}
 }

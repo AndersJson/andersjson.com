@@ -1,0 +1,20 @@
+.page-wrapper{
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-image: none;  
+
+  @mixin tab{
+    flex-direction: row;
+    height: auto;
+    height: 100vh;
+
+    background-image: 
+      linear-gradient(to right, rgba(0,0,0,.8) rgba(0,0,0,.8)),
+      url(./assets/images/coding.jpg);
+    background-size: cover;
+  }
+}
