@@ -11,7 +11,7 @@
   @supports ( (-webkit-clip-path: polygon(0 12rem, 100% 0, 100% 100%, 0 100%) ) or ( clip-path: polygon(0 12rem, 100% 0, 100% 100%, 0 100%) ) ){
     clip-path: polygon(0 12rem, 100% 0, 100% 100%, 0 100%);
     padding-top: 12rem;
-    transform: translateY(-13rem);
+    margin-top: -13rem;
     height: calc(100vh +13rem);
   }
 
@@ -21,7 +21,7 @@
     @supports ( (-webkit-clip-path: polygon(0 12rem, 100% 0, 100% 100%, 0 100%) ) or ( clip-path: polygon(0 12rem, 100% 0, 100% 100%, 0 100%) ) ){
       clip-path: none;
       padding-top: 0;
-      transform: translateY(0);
+      margin-top: 0;
       height: 100%;
     }
   }
