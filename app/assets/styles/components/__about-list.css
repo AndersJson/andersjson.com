@@ -1,28 +1,34 @@
 .about-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style-type: none;
-  font-size: 1.6rem;
+  font-size: 2rem;
+
+  @mixin tab{
+    font-size: 1.6rem;
+  }
 
   & li{
     display: flex;
-
-    &:not(:last-child){
-      margin-bottom: .5rem;
-    }
+    justify-content: center;
+    width: 80%;
+    text-shadow: 1px 1px 3px rgba(0,0,0,1);
   }
 
   &__heading{
-    flex: 0 0 15%;
+    flex: 0 0 20%;
 
     @mixin tab{
-      flex: 0 0 23%;
+      flex: 0 0 20%;
     }
   }
 
   &__data{
-    flex: 0 0 85%;
+    flex: 0 0 40%;
 
     @mixin tab{
-      flex: 0 0 77%;
+      flex: 0 0 36%;
     }
   }
 }
