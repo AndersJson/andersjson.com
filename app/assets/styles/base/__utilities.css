@@ -34,7 +34,11 @@
 
 .padding-left {
 	&--xl {
-		padding-left: 10rem;
+		padding-left: 4rem;
+
+		@mixin tab{
+			padding-left: 15rem;
+		}
 	}
 	&--lg {
 		padding-left: 8rem;

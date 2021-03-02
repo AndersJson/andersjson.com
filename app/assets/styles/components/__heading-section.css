@@ -15,33 +15,6 @@
 		height: calc(100vh + 12rem);
 	}
 
-	@mixin tab{
-		@supports (
-			(-webkit-clip-path: polygon(0 12rem, 100% 0, 100% 100%, 0 100%)) or
-				(clip-path: polygon(0 12rem, 100% 0, 100% 100%, 0 100%))
-		) {
-			clip-path: polygon(0 100%, 0 0, 100% 0, 100% calc(100% - 12rem) );
-			padding-top: 12rem;
-			margin-top: -12rem;
-			height: calc(100vh + 12rem);
-		}
-	}
-
-
-	@mixin desktop {
-		width: 50%;
-		height: 100vh;
-
-		@supports (
-			(-webkit-clip-path: polygon(0 12rem, 100% 0, 100% 100%, 0 100%)) or
-				(clip-path: polygon(0 12rem, 100% 0, 100% 100%, 0 100%))
-		) {
-			clip-path: none;
-			margin-top: 0;
-			padding-top: 4%;
-		}
-	}
-
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
